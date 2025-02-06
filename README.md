@@ -1,0 +1,1 @@
+# plugin-accesibilidad-wp
