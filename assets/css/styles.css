@@ -1,3 +1,5 @@
+/* Estilos del botón de accesibilidad */
+
 .accesibilidad {
     position: fixed;
     z-index: 999;
@@ -17,4 +19,39 @@
 
 .accesibilidad__boton:hover{
     transform: scale(1.1);
+}
+
+/* Estilos del panel de accesibilidad */
+.menu-accesibilidad {
+    z-index: 99999;
+    border-radius: 15px 0 0 15px;
+    position: fixed;
+    right: 0px;
+    top: 10px;
+    width: 70%;
+    height: 600px;
+    display: none;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.menu-accesibilidad h2 {
+    margin-top: 0;
+}
+
+.accesibilidad__opcion {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #0073aa;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.accesibilidad__opcion:hover {
+    background-color: #005177;
 }

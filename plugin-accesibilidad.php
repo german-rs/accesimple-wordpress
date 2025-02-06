@@ -18,7 +18,8 @@ if (!defined('ABSPATH')) {
 require_once plugin_dir_path(__FILE__) . 'includes/funciones.php';
 require_once plugin_dir_path(__FILE__) . 'includes/boton-menu.php';
 require_once plugin_dir_path(__FILE__) . 'includes/estilos.php';
-
+require_once plugin_dir_path(__FILE__) . 'includes/scripts.php';
+require_once plugin_dir_path(__FILE__) . 'includes/panel-accesibilidad.php';
 
 ?>
 

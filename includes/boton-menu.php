@@ -14,7 +14,7 @@ function agregar_boton_menu() {
 
     if (is_front_page()) { 
         $ruta_imagen = obtener_url_imagen($url_img);
-        echo '<div class="' . esc_attr('accesibilidad') . '"><img class="' . esc_attr('accesibilidad__boton') . '" src="' . esc_url($ruta_imagen) . '" alt="' . esc_attr('Menú accesibilidad') . '"></div>';
+        echo '<div class="' . esc_attr('accesibilidad') . '"><img id="accesibilidad__boton" class="' . esc_attr('accesibilidad__boton') . '" src="' . esc_url($ruta_imagen) . '" alt="' . esc_attr('Menú accesibilidad') . '"></div>';
     }
 }
 add_action('wp_body_open', 'agregar_boton_menu');
