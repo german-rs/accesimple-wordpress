@@ -1,1 +1,1 @@
-# Plugin de accesibilidad web para WordPress
+# Plugin de accesibilidad para WordPress
