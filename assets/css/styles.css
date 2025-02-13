@@ -3,9 +3,9 @@
 .accesibilidad {
     position: fixed;
     z-index: 999;
-    right: 10px;
-    top: 650px;
-    cursor: pointer;
+    right: 3%;
+    top: 85%;
+    /* cursor: pointer; */
     max-width: 100%;
     height: auto;
 }

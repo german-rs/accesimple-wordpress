@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: Complemento universal de accesibilidad web
- * Plugin URI:  https://github.com/german-rs/plugin-accesibilidad-wp
- * Description: Plugin de accesibilidad universal para wordpress.
+ * Plugin Name: Accesimple WordPress
+ * Plugin URI:  https://github.com/german-rs/accesimple-wordpress
+ * Description: Plugin de accesibilidad para wordpress.
  * Version:     1.0
  * Author:      Germán Riveros
  * Author URI:  https://germanriveros.cl
