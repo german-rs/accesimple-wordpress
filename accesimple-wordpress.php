@@ -6,6 +6,7 @@
  * Version:     1.0
  * Author:      Germán Riveros
  * Author URI:  https://germanriveros.cl
+ * License: GPL-3.0
  */
 
 

@@ -5,7 +5,7 @@
     z-index: 999;
     right: 3%;
     top: 85%;
-    /* cursor: pointer; */
+    cursor: pointer;
     max-width: 100%;
     height: auto;
 }
