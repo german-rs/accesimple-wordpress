@@ -23,6 +23,9 @@ if (!defined('ABSPATH')) {
 
 
 function generar_panel_accesibilidad() {
+    $imagen_logo = 'accesimple-logo.webp';
+    $ruta_imagen = obtener_url_imagen($imagen_logo);
+
     ob_start();
     ?>
 
@@ -39,9 +42,11 @@ function generar_panel_accesibilidad() {
         </main>
 
         <footer class="accesibilidad__footer">
-            <img src="" alt="">
-            <p>ACCESIMPLE</p>
-            <p>por Germán Riveros</p>
+            <img src="<?php echo esc_url($ruta_imagen) ?>" alt="logo accesimple">
+            <div class="footer-container__text">
+                <p class="footer__text--title">ACCESIMPLE</p>
+                <p class="footer__text--author">por Germán Riveros</p>
+            </div>
         </footer>
     </div>
 
@@ -49,6 +54,7 @@ function generar_panel_accesibilidad() {
     <?php
     echo ob_get_clean(); 
 }
+
 
 
 
