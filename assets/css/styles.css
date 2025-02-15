@@ -1,4 +1,33 @@
 /* Estilos del botón de accesibilidad */
+:root{
+    --color-gray50: #f9fafb;    
+    --color-gray100: #f3f4f6;
+    --color-gray200: #e5e7eb;
+    --color-gray300: #d1d5db;
+    --color-gray400: #9ca3af;
+    --color-gray500: #6b7280;
+    --color-gray600: #4b5563;
+    --color-gray700: #374151;
+    --color-gray800: #1f2937;
+    --color-gray900: #111827;
+    --color-gray950: #030712;
+
+    --color-emerald300: #6ee7b7;
+    --color-emerald400: #4ade80;
+    --color-emerald500: #10b981;
+    --color-emerald600: #059669;
+    --color-emerald700: #047857;
+    --color-emerald800: #166534;
+
+    --color-sky100: #e0f2fe;
+    --color-sky200: #bae6fd;
+    --color-sky400: #38bdf8;
+    --color-sky500: #0ea5e9;
+    --color-sky600: #0284c7;
+    --color-sky700: #0369a1;
+    --color-sky800: #075985;
+}
+
 
 .accesibilidad {
     position: fixed;
@@ -21,6 +50,8 @@
     transform: scale(1.1);
 }
 
+
+
 /* Estilos del panel de accesibilidad */
 .menu-accesibilidad {
     z-index: 99999;
@@ -31,13 +62,24 @@
     width: 70%;
     height: 600px;
     display: none;
-    background-color: #ffffff;
+    background-color: var(--color-gray200);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
 }
 
-.menu-accesibilidad h2 {
-    margin-top: 0;
+.accesibilidad__header{
+    background: linear-gradient(90deg, var(--color-emerald500), var(--color-emerald800));
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.accesibilidad__title {
+    font-size: 1em;
+    text-align: center;
+    color: var(--color-gray50);
 }
 
 .accesibilidad__opcion {
@@ -55,3 +97,5 @@
 .accesibilidad__opcion:hover {
     background-color: #005177;
 }
+
+

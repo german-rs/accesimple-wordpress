@@ -8,14 +8,48 @@ if (!defined('ABSPATH')) {
 /**
  * Genera el HTML del panel de accesibilidad.
  */
+
+// function generar_panel_accesibilidad() {
+//     echo '
+//     <div class="menu-accesibilidad">
+//         <h2>Menú de accesibilidad 2</h2>
+//         <button class="accesibilidad__opcion" data-accion="aumentar-texto">Aumentar texto</button>
+//         <button class="accesibilidad__opcion" data-accion="disminuir-texto">Disminuir texto</button>
+//         <button class="accesibilidad__opcion" data-accion="alto-contraste">Alto contraste</button>
+//         <button class="accesibilidad__opcion" data-accion="modo-oscuro">Modo oscuro</button>
+//     </div>
+//     ';
+// }
+
+
 function generar_panel_accesibilidad() {
-    echo '
+    ob_start();
+    ?>
+
     <div class="menu-accesibilidad">
-        <h2>Herramientas de accesibilidad</h2>
-        <button class="accesibilidad__opcion" data-accion="aumentar-texto">Aumentar texto</button>
-        <button class="accesibilidad__opcion" data-accion="disminuir-texto">Disminuir texto</button>
-        <button class="accesibilidad__opcion" data-accion="alto-contraste">Alto contraste</button>
-        <button class="accesibilidad__opcion" data-accion="modo-oscuro">Modo oscuro</button>
-    </div>';
+        <header class="accesibilidad__header">
+            <h2 class="accesibilidad__title">Menú de accesibilidad</h2>
+        </header>    
+
+        <main>
+            <button class="accesibilidad__opcion" data-accion="aumentar-texto">Aumentar texto</button>
+            <button class="accesibilidad__opcion" data-accion="disminuir-texto">Disminuir texto</button>
+            <button class="accesibilidad__opcion" data-accion="alto-contraste">Alto contraste</button>
+            <button class="accesibilidad__opcion" data-accion="modo-oscuro">Modo oscuro</button>
+        </main>
+
+        <footer class="accesibilidad__footer">
+            <img src="" alt="">
+            <p>ACCESIMPLE</p>
+            <p>por Germán Riveros</p>
+        </footer>
+    </div>
+
+
+    <?php
+    echo ob_get_clean(); 
 }
+
+
+
 add_action('wp_footer', 'generar_panel_accesibilidad');
