@@ -1,43 +1,43 @@
-/* General Sans - Light */
+/* Poppins - Light */
 @font-face {
-    font-family: 'General Sans';
-    src: url('../fonts/GeneralSans-Light.woff2') format('woff2');
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
-/* General Sans - Regular */
+/* Poppins - Regular */
 @font-face {
-    font-family: 'General Sans';
-    src: url('../fonts/GeneralSans-Regular.woff2') format('woff2');
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
-/* General Sans - Medium */
+/* Poppins - Medium */
 @font-face {
-    font-family: 'General Sans';
-    src: url('../fonts/GeneralSans-Medium.woff2') format('woff2');
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
-/* General Sans - Semi Bold */
+/* Poppins - Semi Bold */
 @font-face {
-    font-family: 'General Sans';
-    src: url('../fonts/GeneralSans-Semibold.woff2') format('woff2');
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Semibold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
-/* General Sans - Bold */
+/* Poppins - Bold */
 @font-face {
-    font-family: 'General Sans';
-    src: url('../fonts/GeneralSans-Bold.woff2') format('woff2');
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -96,7 +96,6 @@
 }
 
 
-
 /* Estilos del panel de accesibilidad */
 .menu-accesibilidad {
     z-index: 99999;
@@ -109,7 +108,11 @@
     display: none;
     background-color: var(--color-gray200);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-family: 'General Sans', system-ui, -apple-system, sans-serif;
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+}
+
+.menu-accesibilidad--visible {
+    display: block;
 }
 
 .menu-accesibilidad *{
@@ -132,6 +135,12 @@
     font-size: 1em;
     text-align: center;
     color: var(--color-gray50);
+}
+
+.accesibilidad_cerrar_icono{
+    position: absolute;
+    right: 2%;
+    cursor: pointer;
 }
 
 .accesibilidad__opcion {
