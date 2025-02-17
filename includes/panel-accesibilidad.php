@@ -37,7 +37,7 @@ function generar_panel_accesibilidad() {
             <img class="accesibilidad_cerrar_icono" src="<?php echo esc_url($ruta_imagen_cerrar) ?>" alt="imagen de close">
         </header>    
 
-        <main>
+        <main class="main container">
             <button class="accesibilidad__opcion" data-accion="aumentar-texto">Aumentar texto</button>
             <button class="accesibilidad__opcion" data-accion="disminuir-texto">Disminuir texto</button>
             <button class="accesibilidad__opcion" data-accion="alto-contraste">Alto contraste</button>

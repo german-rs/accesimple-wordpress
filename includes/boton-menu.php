@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
  * El botón se muestra solo si el usuario está en la página principal.
  */
 function agregar_boton_menu() {
-    $url_img = 'boton_menu.webp';
+    $url_img = 'btn-menu.webp';
 
     if (is_front_page()) { 
         $ruta_imagen = obtener_url_imagen($url_img);

@@ -86,7 +86,7 @@
 
 .accesibilidad__boton{
     width: 100%;
-    max-width: 80px;
+    max-width: 70px;
     height: auto;
     transition: transform 0.3s ease-out;
 }
@@ -104,7 +104,7 @@
     right: 0px;
     top: 10px;
     width: 70%;
-    height: 600px;
+    height: 100vh;
     display: none;
     background-color: var(--color-gray200);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -120,6 +120,13 @@
     margin: 0;
     padding: 0;
 }
+
+
+/* 
+
+        Header 
+
+*/
 
 .accesibilidad__header{
     background: linear-gradient(90deg, var(--color-emerald500), var(--color-emerald800));
@@ -162,6 +169,12 @@
 
 
 
+
+/* 
+
+        Footer 
+
+*/
 .accesibilidad__footer{
     position: absolute;
     bottom: 0;
@@ -189,4 +202,57 @@
 
 .footer__text--author{
     font-size: 10;
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* xs */
+@media (min-width: 475px){
+    .container{
+        max-width: 475px;
+    }
+}
+
+/* sm */
+@media (min-width: 640px){
+    .container{
+        max-width: 640px;
+    }
+}
+
+/* md */
+@media (min-width: 768px){
+    .container{
+        max-width: 768px;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px){
+    .container{
+        max-width: 1024px;
+    }
+    .section{
+        margin-top: 10rem;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px){
+    .container{
+        max-width: 1280px;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px){
+    .container{
+        max-width: 1536px;
+    }
 }
