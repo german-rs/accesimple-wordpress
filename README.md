@@ -18,6 +18,33 @@ Accesimple WordPress es un plugin de accesibilidad de código abierto, diseñado
 - **Ocultar imágenes**: elimina las imágenes para una experiencia de lectura más limpia.  
 - **Detener animaciones**: pausa las animaciones para evitar distracciones o molestias a personas sensibles al movimiento.  
 
+## Estructura del proyecto.
+
+```
+accesimple-wordpress/
+│ 
+├── includes/
+│   ├── core/
+│   │   ├── class-init.php
+│   │   └── class-helpers.php
+│   ├── frontend/
+│   │   ├── class-accessibility-button.php
+│   │   └── class-accessibility-panel.php
+│   └── features/        --pendientes           
+│       ├── class-text-size.php
+│       ├── class-contrast.php
+│       └── class-dark-mode.php
+├── assets/
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   │   ├── accessibility-panel.js
+│   │   └── accessibility-features.js
+│   ├── fonts/
+│   └── images/
+└── accesimple-wordpress.php
+
+```
 
 ## 🔹 Licencia
 Distribuido bajo la licencia **GPL-3.0**, permitiendo su uso, modificación y distribución libre.
