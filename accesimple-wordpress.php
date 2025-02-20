@@ -25,8 +25,9 @@ define('ACCESIMPLE_VERSION', '1.0.0'); // Versión actual del plugin.
 define('ACCESIMPLE_PATH', plugin_dir_path(__FILE__)); // Ruta absoluta al directorio del plugin.
 define('ACCESIMPLE_URL', plugin_dir_url(__FILE__)); // URL absoluta al directorio del plugin.
 
-// Autoloader.
 /**
+ * Autoloader.
+ * 
  * Registra una función de autoload que se ejecuta automáticamente cuando 
  * se intenta instanciar una clase que no ha sido cargada aún. Esto es parte 
  * de las mejores prácticas de PHP para evitar cargar manualmente las clases.
@@ -42,9 +43,9 @@ spl_autoload_register(function ($class) {
         return;
     }
 
-    
-    // Convierte el namespace de la clase en una ruta de archivo.
     /**
+     * Convierte el namespace de la clase en una ruta de archivo.
+     * 
      * Reemplaza todas las barras invertidas (\) en el namespace con 
      * el separador de directorio del sistema operativo (DIRECTORY_SEPARATOR), 
      * que es / en Unix/Linux y \ en Windows.
@@ -59,15 +60,16 @@ spl_autoload_register(function ($class) {
 
     /**
      * Construye la ruta completa del archivo.
+     * 
      * ACCESIMPLE_PATH: Es la ruta absoluta al directorio del plugin.
      * strtolower($file): Convierte la ruta a minúsculas para asegurar que sea compatible 
      * con sistemas de archivos que distinguen entre mayúsculas y minúsculas.
      */
     $file = ACCESIMPLE_PATH . 'includes' . strtolower($file) . '.php';
 
-
-    // Se modifica la última parte del nombre del archivo para usar guiones.
     /**
+     * Se modifica la última parte del nombre del archivo para usar guiones.
+     * 
      * Divide la ruta del archivo en un array, usando el separador de directorio (/ o \).
      */
     $file_parts = explode(DIRECTORY_SEPARATOR, $file);
@@ -90,8 +92,9 @@ spl_autoload_register(function ($class) {
 });
 
 
-// Inicializar el plugin.
 /**
+ * Inicializar el plugin.
+ * 
  * Este código se ejecuta cuando WordPress ha cargado todos los plugins. 
  * Es un hook de WordPress que asegura que el plugin se inicialice después 
  * de que WordPress y otros plugins estén listos.
