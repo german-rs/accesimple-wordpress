@@ -5,6 +5,7 @@ use Accesimple\Core\Helpers;
 
 class Accessibility_Panel {
     public static function render() {
+
         $imagen_logo = 'accesimple-logo.webp';
         $imagen_cerrar = 'cerrar.svg';
         $ruta_imagen = Helpers::get_image_url($imagen_logo);
@@ -14,25 +15,53 @@ class Accessibility_Panel {
         ?>
 
         <div class="menu-accesibilidad">
-            <header class="accesibilidad__header">
-                <h2 class="accesibilidad__title">Menú de accesibilidad</h2>
-                <img class="accesibilidad_cerrar_icono" src="<?php echo esc_url($ruta_imagen_cerrar) ?>" alt="imagen de close">
-            </header>    
+            <?php
+            Helpers::get_template('header-panel', [
+                'titulo' => 'Menú de accesibilidad',
+                'ruta_imagen_cerrar' => $ruta_imagen_cerrar,
+                'alt_imagen' => 'imagen de close'
+            ]);
+            ?> 
 
             <main class="main container">
-                <button class="accesibilidad__opcion" data-accion="aumentar-texto">Aumentar texto</button>
-                <button class="accesibilidad__opcion" data-accion="disminuir-texto">Disminuir texto</button>
-                <button class="accesibilidad__opcion" data-accion="alto-contraste">Alto contraste</button>
-                <button class="accesibilidad__opcion" data-accion="modo-oscuro">Modo oscuro</button>
+
+                <?php 
+                Helpers::get_template('boton', [
+                    'clase_boton' => 'accesibilidad__opcion',
+                    'accion' => 'aumentar-texto',
+                    'texto_boton' => 'Aumentar texto'
+                ]);
+
+                Helpers::get_template('boton', [
+                    'clase_boton' => 'accesibilidad__opcion',
+                    'accion' => 'disminuir-texto',
+                    'texto_boton' => 'Disminuir texto'
+                ]);
+
+                Helpers::get_template('boton', [
+                    'clase_boton' => 'accesibilidad__opcion',
+                    'accion' => 'alto-contraste',
+                    'texto_boton' => 'Alto contraste'
+                ]);
+
+                Helpers::get_template('boton', [
+                    'clase_boton' => 'accesibilidad__opcion',
+                    'accion' => 'modo-oscuro',
+                    'texto_boton' => 'Modo oscuro'
+                ]);
+
+                ?>
+
             </main>
 
-            <footer class="accesibilidad__footer">
-                <img src="<?php echo esc_url($ruta_imagen) ?>" alt="logo accesimple">
-                <div class="footer-container__text">
-                    <p class="footer__text--title">ACCESIMPLE</p>
-                    <p class="footer__text--author">por Germán Riveros</p>
-                </div>
-            </footer>
+           <?php 
+           Helpers::get_template('footer-panel',[
+            'ruta_imagen' => $ruta_imagen,
+            'alt_img_logo' => 'Logo Accesimple',
+            'titulo_footer' => 'ACCESIMPLE',
+            'autor' => 'Por Germán Riveros'
+           ]);
+           ?>
         </div>
 
         <?php
